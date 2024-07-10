@@ -18,7 +18,7 @@
 ## Execução:    
    <pre><code>npm start</code></pre>
 
-## Arquivos em src
+## Arquivos fontes do projeto em src
 - index.js - Programa principal com o servidor Express.
 - alunodao.js - Classe de acesso aos dados do banco de dados.
 - alunorecurso.js - Contêm os métodos de acesso aos recursos do banco de dados.
