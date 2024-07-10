@@ -31,23 +31,23 @@
 ## Serviços
     Substitua localhost:8080 pelo endereço do servidor.
 
-- Serviço que retorna via GET a lista de cliente.<br>
-    http://localhost:8000/clientes
+- Serviço que retorna via GET a lista de alunos.<br>
+    http://localhost:8000/alunos
 
-- Serviço que retorna via GET um cliente.<br>
-    substitua \<ID\> por um id de um cliente.<br>
-    http://localhost:8000/cliente/<ID\>
+- Serviço que retorna via GET um aluno.<br>
+    substitua \<ID\> por um id de um aluno.<br>
+    http://localhost:8000/aluno/<ID\>
 
-- Serviço que insere via POST um cliente.<br>
-    http://localhost:8000/cliente<br>
-    Enviar um JSON com os campos clienteId, nome e cpf.
-    Content-Type: application/json -d {"clienteId":"1", "nome":"Pedro","cpf":"45678912399"}
+- Serviço que insere via POST um aluno.<br>
+    http://localhost:8000/aluno<br>
+    Enviar um JSON com os campos alunoId, nome, curso e cpf.
+    Content-Type: application/json -d {"alunoId":"1","nome":"Pedro","curso":"Computação","cpf":"45678912399"}
 
-- Serviço que atualiza via PUT um cliente.<br>
-    http://localhost:8000/cliente<br>
-    Enviar um JSON com os campos clienteId, nome e cpf.
-    Content-Type: application/json -d {"clienteId":"1", "nome":"Pedro","cpf":"45678912399"}
+- Serviço que atualiza via PUT um aluno.<br>
+    http://localhost:8000/aluno<br>
+    Enviar um JSON com os campos alunoId, nome, curso e cpf.
+    Content-Type: application/json -d {"alunoId":"1", "nome":"Pedro","curso":"Computação","cpf":"45678912399"}
     
-- Serviço que exclui via DELETE um cliente.<br>
-    Substitua \<ID\> por um id de um cliente.<br>
-    http://localhost:8000/cliente/<ID\>
+- Serviço que exclui via DELETE um aluno.<br>
+    Substitua \<ID\> por um id de um aluno.<br>
+    http://localhost:8000/aluno/<ID\>
