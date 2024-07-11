@@ -1,6 +1,7 @@
 # Programa servidor API-REST do CRUD de Aluno utilizando Node.js e Vercel Postgres com DAO.
 
 ## Descrição
+
 - O projeto foi desenvolvido no VSCodde deve ser chamado "aluno_nodejs_dao_v1_vercel".
 - Programa cliente está no projeto "cadastroaluno_reactjs_v1_vercel" ou "cadastroaluno_reactjs_bootstrap_v1_vercel".
 - Programa servidor web que cria o webservice na posta 8000.
@@ -10,15 +11,18 @@
 - A tabela aluno possui os campos alunoId, nome, curso e cpf.
 
 ## Dependências
+
 - express,
 - cors,
 - dotenv
 - @vercel/postgres.
 
-## Execução:    
+## Execução
+
    <pre><code>npm start</code></pre>
 
 ## Arquivos fontes do projeto em src
+
 - index.js - Programa principal com o servidor Express.
 - alunodao.js - Classe de acesso aos dados do banco de dados.
 - alunorecurso.js - Contêm os métodos de acesso aos recursos do banco de dados.
@@ -26,9 +30,11 @@
 - servicos.js - Contêm as rotas aos métodos de acesso ao banco de dados.
 
 ## Vercel   
+
    https://cadastroaluno-nodejs-dao-v1-vercel.vercel.app/    
 
 ## Serviços
+
     Substitua localhost:8080 pelo endereço do servidor.
 
 - Serviço que retorna via GET a lista de alunos.<br>
