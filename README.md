@@ -12,9 +12,9 @@
 
 ## Dependências
 
-- express,
 - cors,
-- dotenv
+- express,
+- dotenv,
 - @vercel/postgres.
 
 ## Execução
