@@ -10,7 +10,7 @@ const getLista = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new AlunoDAO();
 
-    const { rows } = await dao.getLista();
+    const rows = await dao.getLista();
 
     response.status(200).json(rows);
  
@@ -23,7 +23,7 @@ const getAluno = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new AlunoDAO();
 
-    const { rows } = await dao.getAluno(alunoId);
+    const rows = await dao.getAluno(alunoId);
 
     response.status(200).json(rows[0]);
 };
@@ -35,7 +35,7 @@ const inserir = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new AlunoDAO();
     
-    const { rows } = await dao.inserir(alunoId, nome, curso, cpf);
+    const rows = await dao.inserir(alunoId, nome, curso, cpf);
 
     response.status(201).json({ message: `Aluno inserido com alunoId: ${alunoId}` })
     
@@ -49,7 +49,7 @@ const alterar = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new AlunoDAO();
 
-    const { rows } = await dao.alterar(alunoId, nome, curso, cpf);
+    const rows = await dao.alterar(alunoId, nome, curso, cpf);
     
     response.status(200).json( { message: `Aluno alterado com alunoId: ${alunoId}` });    
 };
@@ -62,7 +62,7 @@ const excluir = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new AlunoDAO();
 
-    const { rows } = await dao.excluir(alunoId);
+    const rows = await dao.excluir(alunoId);
 
     response.status(200).json( { message: `Aluno excluído com alunoId: ${alunoId}` });
 };
